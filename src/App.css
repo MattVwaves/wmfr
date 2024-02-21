@@ -115,6 +115,8 @@ h1 {
   padding: 15px;
   margin-bottom: 15px;
   border: 1px solid #8bbeb9;
+  width: 200px;
+  text-align: center;
 }
 
 .track {
