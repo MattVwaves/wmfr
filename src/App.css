@@ -1,38 +1,124 @@
+* {
+  list-style: none;
+}
+
 .App {
+  text-align: center;
+  background-color: #dff2df99;
+}
+
+ul {
+  margin: 0;
+}
+
+.homepage {
+  text-align: center;
+  background-color: #dff2df99;
+  position: relative;
+}
+
+.css-fix {
+  white-space: pre-wrap; /* or pre-line */
+}
+
+h1 {
+  border-bottom: 1px solid #8bbeb9;
+  padding-bottom: 20px;
+}
+
+.home-nav h2 {
+  display: inline-block;
+}
+
+.nav-item {
+  padding: 10px;
+}
+
+#music {
+  border-right: solid 2px #8bbeb9;
+}
+
+.about-me {
+  position: relative;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#matt-walk-cut {
+  position: absolute;
+  left: 25%;
+  opacity: 0.2;
+  filter: invert(75%);
+  background-color: transparent !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#matt-walk-cut-2 {
+  position: absolute;
+  left: 30%;
+  opacity: 0.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.about-me-text {
+  white-space: pre-wrap;
+  line-height: 1.6;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #dff2df99;
+  padding: 20px;
+  border-left: 1px solid #8bbeb9;
+  font-size: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+/* music */
+
+.music-categories-outer {
+  width: 50%;
+  height: 300px;
+  /* border: 1px solid black; */
+  position: inherit;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 160px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.categories-container {
+  border: 1px solid red;
+  margin: auto;
+}
+
+.music-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.categories-list-container-left {
+  text-align: right;
+}
+
+.track-list {
+  text-align: center;
+}
+
+.categories-list-container-right {
+  text-align: left;
+}
+
+.categories-list {
+  /* border: 1px solid blue; */
+  margin: 0;
+  padding: 0;
+}
+
+.music-category {
+  display: inline-block;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #8bbeb9;
+}
+
+.track {
+  border: 1px solid #8bbeb9;
+  padding: 10px;
+  margin: 0px 10px 10px 10px;
 }
