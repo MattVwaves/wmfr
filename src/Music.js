@@ -1,16 +1,21 @@
 import './App.css';
 import Header from './Header';
 import ReactAudioPlayer from 'react-audio-player';
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
+
 import Epiano from './electric_piano.mp3';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { createRef } from 'react';
 import MusicCategories from './MusicTracks';
 
 export default function Music() {
-  const [category, setCategory] = useState('Melodically Rich');
+  const [category, setCategory] = useState('MelodicallyRich');
   const [trackList, setTrackList] = useState(
     MusicCategories.MusicCategories[0].tracks
   );
+  const [currentTrack, setCurrentTrack] = useState('Little_Ones.mp3');
 
   useEffect(() => {});
 
@@ -23,6 +28,14 @@ export default function Music() {
     );
     setTrackList(foundCategory.tracks);
   };
+
+  const handleSelectTrack = async (track) => {
+    setCurrentTrack(track.fileName);
+    player.current.playAudioPromise();
+  };
+
+  const player = createRef();
+
   return (
     <>
       <div className="homepage">
@@ -32,7 +45,7 @@ export default function Music() {
             <div className="categories-list-container-left">
               <ul className="categories-list">
                 <li className="music-category">
-                  <h3 onClick={handleCategory}>Melodically Rich</h3>
+                  <h3 onClick={handleCategory}>MelodicallyRich</h3>
                 </li>
                 <li className="music-category">
                   <h3 onClick={handleCategory}>Ambient</h3>
@@ -47,7 +60,11 @@ export default function Music() {
                 <ul className="categories-list">
                   {trackList.map((track) => {
                     return (
-                      <li className="track" key={track.id}>
+                      <li
+                        className="track"
+                        key={track.id}
+                        onClick={() => handleSelectTrack(track)}
+                      >
                         {track.trackName}
                       </li>
                     );
@@ -70,7 +87,13 @@ export default function Music() {
             </div>
           </div>
         </div>
-        <ReactAudioPlayer src={Epiano} controls />
+
+        <AudioPlayer
+          header={currentTrack}
+          controls
+          src={require(`./music/${category}/${currentTrack}`)}
+          ref={player}
+        ></AudioPlayer>
       </div>
     </>
   );

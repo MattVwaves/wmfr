@@ -1,17 +1,17 @@
 export default {
   MusicCategories: [
     {
-      category: 'Melodically Rich',
+      category: 'MelodicallyRich',
       tracks: [
         {
           id: 1,
-          trackName: 'MR Track One',
-          fileName: 'Track_One.mp3',
+          trackName: 'Little Ones',
+          fileName: 'Little_Ones.mp3',
         },
         {
           id: 2,
-          trackName: 'MR Track Two',
-          fileName: 'Track_Two.mp3',
+          trackName: 'bloom',
+          fileName: 'bloom.mp3',
         },
       ],
     },
