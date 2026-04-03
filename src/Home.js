@@ -73,7 +73,7 @@ export default function Home() {
 
     </div>
 
-      <img id='background-image'src={require('./images/HOMEbackground.png')} alt="WMFR"></img>
+      <img id='background-image'src={require('./images/HOMEbackground_smaller.png')} alt="WMFR"></img>
 
 
 
