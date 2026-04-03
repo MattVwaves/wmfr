@@ -63,11 +63,11 @@ export default function Contact() {
                 {/* </p> */}
                 <p className='contact-text'>Get me here: walterkeyne@gmail.com for composition, production/engineering, sound design and such. Or if you want to know more about me* and/or my work.
                   <br/>
-                  <br/>I might work for free if there's no budget, and, your a decent sort with some nicee ideas knocking around in your mind machine!
+                  {/* <br/>I might work for free if there's no budget, and, your a decent sort with some nicee ideas knocking around in your mind machine! */}
                   <br/>
-                  <br/>I believe, perhaps strongly that my work is @ its best, or, at the very least - MINE - when it somehwat sharply diverts emotions to both unsettle the soul, and, remind one that a settled soul is a docile one. Think of it like watxching a good ol' Robert ALtman film, perhaps Nashville. The true value is only discovered upon completion. 
+                  {/* <br/>I believe, perhaps strongly that my work is @ its best, or, at the very least - MINE - when it somehwat sharply diverts emotions to both unsettle the soul, and, remind one that a settled soul is a docile one. Think of it like watxching a good ol' Robert ALtman film, perhaps Nashville. The true value is only discovered upon completion.  */}
                   <br/>
-                  <br/> *Such as the wild vicissitudes typical to the artist as person living in this fine world. 
+                  {/* <br/> *Such as the wild vicissitudes typical to the artist as person living in this fine world.  */}
 
                 </p>
 
