@@ -1,6 +1,47 @@
 export default {
   MusicCategories: [
     {
+      category: 'Modular',
+      tracks: [
+        {
+          id: 1,
+          trackName: "Feyd: Don't Resuscitate",
+          fileName: "Feyd: Don't Resuscitate.mp3",
+          category: 'Modular'
+        },
+        {
+          id: 2,
+          trackName: "Pam's Bow",
+          fileName: "Pam's Bow.mp3",
+          category: "Modular"
+        },
+        {
+          id: 3,
+          trackName: "Cousin Peter",
+          fileName: "Cousin Peter.mp3",
+          category: "Modular"
+        },
+        {
+          id: 4,
+          trackName: "The Last Days Of Stevie",
+          fileName: "The Last Days Of Stevie.mp3",
+          category: "Modular"
+        },
+        {
+          id: 5,
+          trackName: "The Last Days Of Trident",
+          fileName: "The Last Days Of Trident.mp3",
+          category: "Modular"
+        },
+        {
+          id: 6,
+          trackName: "The Algo Vulture",
+          fileName: "The Algo Vulture.mp3",
+          category: "Modular"
+        }
+      ]
+    },
+    {
       category: 'Thematic',
       tracks: [
         {

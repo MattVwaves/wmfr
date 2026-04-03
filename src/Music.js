@@ -19,15 +19,15 @@ import { Link } from 'react-router-dom';
 
 export default function Music() {
 
-  const [category, setCategory] = useState('Thematic');
-  const [categoryBrowse, setCategoryBrowse] = useState('Thematic');
+  const [category, setCategory] = useState('Modular');
+  const [categoryBrowse, setCategoryBrowse] = useState('Modular');
   const [trackChanged, setTrackChanged] = useState(false)
 
   const [trackList, setTrackList] = useState(
     MusicCategories.MusicCategories[0].tracks
   );
-  const [currentTrack, setCurrentTrack] = useState('Technology Vs Itself.mp3');
-  const [currentTrackName, setCurrentTrackName] = useState('Technology Vs Itself');
+  const [currentTrack, setCurrentTrack] = useState("Feyd: Don't Resuscitate.mp3");
+  const [currentTrackName, setCurrentTrackName] = useState("Feyd: Don't Resuscitate");
 
 
   const [hoverHome, setHoverHome] = useState(false)
@@ -134,6 +134,7 @@ export default function Music() {
 
                 <div className='music-list-container'>
                 <ul className='categories-list'>
+                  <li onClick={handleCategory} className='mood-text'>Modular</li>
                   <li onClick={handleCategory} className='mood-text'>Thematic</li>
                   <li onClick={handleCategory} className='mood-text'>Atmospheric</li>
                   <li onClick={handleCategory} className='mood-text'>Songs</li>
