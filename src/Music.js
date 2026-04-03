@@ -199,7 +199,7 @@ export default function Music() {
 
         </div>
 
-        <img id='background-image'src={require('./images/MUSICbackground.png')} alt="WMFR"></img>
+        <img id='background-image'src={require('./images/MUSICbackground_smaller.png')} alt="WMFR"></img>
 
               <div className='player-container'>
                 <div className='player'>

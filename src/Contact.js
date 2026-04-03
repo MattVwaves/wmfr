@@ -86,7 +86,7 @@ export default function Contact() {
         </div>
 
 
-        <img id='background-image'src={require('./images/CONTACTfull.png')} alt="WMFR"></img>
+        <img id='background-image'src={require('./images/CONTACTfull_smaller.png')} alt="WMFR"></img>
 
       </div>
     </>
