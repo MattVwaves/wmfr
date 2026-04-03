@@ -1,20 +1,203 @@
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+
+/* ------------------------------------------------ */
+
 * {
   list-style: none;
+  font-weight: normal;
+  color: white;
+  font-family: Papyrus;
+  margin: 0px;
+  padding: 0px;
+  text-shadow: 2px 2px black;
+  -webkit-font-smoothing: antialiased;
+
+text-rendering: optimizeLegibility;
+
+    font-synthesis: none;
+    font-style: normal; 
+    text-decoration: none;
+
+
+  /* background-color: black; */
+
 }
+
+@font-face {
+  font-family: "Papryus";
+  src: url(https://www.dropbox.com/scl/fi/i06afibk79z6fjtcr63c8/Papyrus.woff2?rlkey=dc93pe5hxlzq47bhf2v5xhxn7&st=9s54nd0u&dl=0) format(woff2)
+}
+
+
 
 .App {
   text-align: center;
   background-color: #dff2df99;
+  color: grey;
 }
+
+body {
+  overflow: hidden; /* Hide scrollbars */
+}
+
+/* html { 
+  background: url('./images/HOMEbackground.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */
 
 ul {
   margin: 0;
 }
 
 .homepage {
-  text-align: center;
-  background-color: #dff2df99;
   position: relative;
+  width:100vw;
+  height:100vh;
+  text-align: center;
+  background-color: grey;
+
+
+  /* margin-top: 1.8%; */
+  /* text-align: center;
+  position: relative;
+    */
+   
+}
+
+#background-image {
+  width:100vw;
+  height:100vh;
+
+  /* object-fit: contain; */
+  display: block;
+  object-fit: cover;
+}
+
+#title-container {
+  /* width:30vw; */
+  height:30%;
+  /* border: 5px solid greenyellow; */
+  object-fit: cover;
+  display: block;
+  background-color: transparent !important;
+  margin: auto;
+  position: relative;
+}
+
+.nav-container {
+  /* width:300px;
+  height: 300px; */
+  /* border: 5px solid yellow; */
+  /* object-fit: contain; */
+  display: block;
+  background-color: transparent !important;
+  margin: auto;
+  position: relative;
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#nav-container-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  /* border: 1px solid black; */
+}
+
+#scroll-page {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.nav-image {
+height: 75%;
+width: 75%;
+margin-bottom: 5vh;
+object-fit: contain;
+ 
+}
+
+
+
+#nav-image-contact {
+  height: 85%;
+  width: 85%;
+  /* position: relative; */
+  /* top: 0; */
+    /* transform: translate(-50%, -50%); */
+
+}
+
+#nav-image-wk {
+  height: 100%;
+  width: 100%;
+  margin-top: 10vh;
+}
+
+#Walter-Keyne-text {
+  position: absolute;
+  text-align: center;
+  /* width: 30vw;
+  top: 15vh; */
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+    font-size: clamp(0.75rem, 2vh + 1rem, 3.5rem);
+
+  line-height: 150%; 
+
+  /* font-size:5vh; */
+}
+
+#navigation-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+
+  width: 100%;
+  height: 60vh;
+  /* border: 5px solid greenyellow; */
+  object-fit: contain;
+  /* display: block; */
+  margin: auto;
+  bottom: 0;
+  background-color: transparent !important;
+  /* border: 1px solid black; */
+
+}
+
+#nav-item {
+  border: 2px solid green;
+  padding: 10px;
+}
+
+
+.overlay-container {
+  position: absolute;
+  width:100vw;
+  height:100vh;
+  /* border: 20px solid red; */
+  background-color: transparent !important;
+  text-align: center;
+  margin: auto;
+
 }
 
 .css-fix {
@@ -22,7 +205,7 @@ ul {
 }
 
 h1 {
-  border-bottom: 1px solid #8bbeb9;
+  /* border-bottom: 1px solid #8bbeb9; */
   padding-bottom: 20px;
 }
 
@@ -35,7 +218,7 @@ h1 {
 }
 
 #music {
-  border-right: solid 2px #8bbeb9;
+  /* border-right: solid 2px #8bbeb9; */
 }
 
 .about-me {
@@ -66,7 +249,7 @@ h1 {
   transform: translate(-50%, -50%);
   background-color: #dff2df99;
   padding: 20px;
-  border-left: 1px solid #8bbeb9;
+  /* border-left: 1px solid #8bbeb9; */
   font-size: 30px;
 }
 
@@ -76,11 +259,17 @@ h1 {
   width: 50%;
   height: 300px;
   /* border: 1px solid black; */
-  position: inherit;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   margin-top: 160px;
 }
+
+/* .pic {
+  filter:blur(5px);
+  z-index: -1;
+  
+} */
 
 .categories-container {
   border: 1px solid red;
@@ -97,6 +286,7 @@ h1 {
 }
 
 .track-list {
+  margin: auto;
   text-align: center;
 }
 
@@ -110,17 +300,340 @@ h1 {
   padding: 0;
 }
 
+
 .music-category {
   display: inline-block;
-  padding: 15px;
   margin-bottom: 15px;
-  border: 1px solid #8bbeb9;
+  /* background-color:rgb(178, 203, 203); */
+  border-radius: 2%;
+  /* border-bottom: 1px solid #8bbeb9; */
+  /* border-right: 1px solid #8bbeb9; */
+  color: grey;
+
   width: 200px;
   text-align: center;
+  font-size: 20px;
 }
 
 .track {
-  border: 1px solid #8bbeb9;
-  padding: 10px;
-  margin: 0px 10px 10px 10px;
+  /* border-bottom: 1px solid #aaafb7; */
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color:#e0e7f2;
 }
+
+.player-container {
+  /* position: relative;
+  height: 100%; */
+}
+
+.player {
+  text-align: center;
+  position: fixed;  
+  bottom: 0;
+  /* right:0; */
+  width: 100%;
+  /* height: 20vh; */
+  /* margin-bottom: 10vh; */
+  display: block;
+}
+
+
+
+
+
+
+
+
+.rhap_container.rhap_loop--off.rhap_play-status--paused {
+  /* background-color: transparent !important; */
+  background: black;
+  opacity: 50%;
+ 
+}
+
+.rhap_container.rhap_loop--off.rhap_play-status--playing {
+  /* background-color: transparent !important; */
+  background: black;
+  opacity: 75%;
+ 
+}
+
+.rhap_header {
+  text-shadow: 3px 3px black;
+  font-size: clamp(0.75rem, 2vh + 1rem, 3.5rem);
+  padding-top: 3vh;
+}
+
+.rhap_time.rhap_total-time {
+  color: white;
+  text-shadow: 0 0 0;
+  /* background-color: grey; */
+  padding: 1vh;
+
+}
+
+
+
+#rhap_current-time {
+  color: white;
+  text-shadow: 0 0 0;
+    /* background-color: grey; */
+      padding: 1vh;
+
+
+}
+
+.rhap_main-controls-button {
+  width: 80px !important;
+  height: 80px !important;
+  padding: 0px;
+  margin: 0px;
+}
+
+.rhap_progress-bar.rhap_progress-bar-show-download .rhap_progress-filled {
+    /* background: #cfe7f7; */
+    /* border: 2px solid black; */
+    background: rgb(56, 144, 203);
+
+}
+
+.rhap_progress-bar.rhap_progress-bar-show-download .rhap_progress-indicator {
+    background: rgb(56, 144, 203);
+
+    /* background: #cfe7f7; */
+        /* border: 2px solid black; */
+
+
+}
+
+.rhap_progress-filled {
+  background: #cfe7f7;
+}
+
+.rhap_progress-indicator {
+    background: #cfe7f7;
+
+}
+
+
+
+
+
+.play {
+  width: 2vw;
+  float: left;
+  left: 0;
+  padding-left: 9vw;
+  padding-top: 0.5vh;
+  position: absolute;
+  
+}
+
+
+/* *********************** MUSIC NEW ************************/
+
+#music-header-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  width:100%; 
+  height: 10vh;
+  /* border: 5px solid greenyellow; */
+  background-color: transparent !important;
+  margin: auto;
+}
+
+.music-header-title-container {
+  height: fit-content;
+  /* border: 5px solid pink; */
+  background-color: transparent !important;
+  position: relative;
+}
+
+.music-header-title-scroll {
+  height: 13vh;  
+}
+
+.music-header-home-scroll {
+  display: block;
+  margin-left: auto;
+  height: 12vh;  
+}
+
+.music-text {
+  position: absolute;
+  text-align: center;
+  /* width: 30vw;
+  top: 15vh; */
+  left: 50%;
+  top: 0;
+  margin-top: 5vh;
+  transform: translate(-50%, -50%);
+  font-size:5vh;
+}
+
+.home-text {
+  position: absolute;
+  text-align: center;
+  right: 0;
+  top: 0;
+  transform: translate(-50%, -50%);
+  font-size:5vh;
+  margin-top: 5vh;
+  font-size: 4vh;
+
+}
+
+.music-header-home-container {
+
+  /* border: 5px solid pink; */
+
+}
+
+.music-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* border: 1px solid red; */
+  width: 100%;
+  height: 70vh;;
+
+}
+
+.music-container-item {
+  /* border: 5px solid green; */
+  position: relative;
+  margin: auto;
+  margin-left: 10vw;
+  text-align: center;
+  width: 35vw;
+  height: 80vh;
+}
+
+.music-moods-scroll {
+  width: 100%;
+  height: 100%;
+
+  /* height: 80vh; */
+  object-fit: cover;
+  overflow: visible;
+}
+
+.music-moods-text {
+  position: absolute;
+  /* margin-left: 10vw; */
+  margin-top: 2vh;
+  /* text-align: center; */
+  /* margin-left:8vw; */
+  width: 100%;
+  height: auto;
+}
+
+.music-title-container {
+  height: 15vh;
+  font-size: clamp(0.5rem, 3vw, 10rem);
+
+  /* border: 2px solid red; */
+  /* height: 15vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid green;  */
+  padding-top: 1vh;
+}
+
+.music-title-text {
+
+}
+
+.music-list-container {
+  /* border: 1px solid black; */
+  height: 50vh;
+    /* background-color: rgb(211, 211, 211); */
+    /* opacity: 75%; */
+
+}
+
+.categories-list {
+   /* background-color: rgb(211, 211, 211); */
+    /* opacity: 75%; */
+    height: 30vh;
+    overflow-y: scroll;
+}
+
+.mood-text {
+  font-size: clamp(0.5rem, 1.5vw + 0.3rem, 2rem);
+  text-shadow: 0 0;
+  color: black;
+  margin-bottom: 1.5vh;
+  /* border: 1px solid black; */
+ 
+  /* font-size: 4vh; */
+  }
+
+.music-gram {
+  width: 10vw;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2vh;
+}
+
+
+/* *********************** CONTACT ************************/
+
+
+.contact-page {
+  display: inline-block;
+  /* height: 100vh; */
+  width: 100%;
+  height: auto;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr;
+  /* border: 3px solid purple; */
+  height: 100vh;
+  position: absolute;
+  /* width: 45vw; */
+  margin: auto;
+  overflow: auto;
+}
+
+.contact-text-container {
+  display: grid;
+  /* border: 5px solid red; */
+  margin-bottom: 10vh;
+  /* max-width: 100%;
+  max-height: 100vh; */
+  overflow: auto;
+  
+}
+
+.contact-text {
+  margin: 20px;
+  margin-top: 25vh;
+  margin-left: 5vw;
+  font-size: clamp(0.75rem, 1vw + 0.5rem, 3.5rem);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-shadow: 0px 0px white;
+  color: black;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 

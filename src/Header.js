@@ -6,9 +6,9 @@ export default function Header() {
     <>
       <header>
         <Link to={'/'}>
-          <img src={require('./WMFR.png')} alt="WMFR"></img>
+          <img id='wmfr-title' src={require('./WMFR.png')} alt="WMFR"></img>
         </Link>
-        <h1>Music Composition + Production</h1>
+        {/* <h1>Music Composition + Production</h1> */}
         <nav className="home-nav">
           <h2 className="nav-item" id="music">
             <Link
