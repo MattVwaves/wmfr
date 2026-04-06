@@ -6,7 +6,7 @@ export default {
         {
           id: 1,
           trackName: "Feyd: Don't Resuscitate",
-          fileName: "Feyd: Don't Resuscitate.mp3",
+          fileName: "Feyd_FINAL.mp3",
           category: 'Modular'
         },
         {

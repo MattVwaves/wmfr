@@ -26,7 +26,7 @@ export default function Music() {
   const [trackList, setTrackList] = useState(
     MusicCategories.MusicCategories[0].tracks
   );
-  const [currentTrack, setCurrentTrack] = useState("Feyd: Don't Resuscitate.mp3");
+  const [currentTrack, setCurrentTrack] = useState("Feyd_FINAL.mp3");
   const [currentTrackName, setCurrentTrackName] = useState("Feyd: Don't Resuscitate");
 
 
