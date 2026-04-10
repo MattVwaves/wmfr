@@ -134,13 +134,13 @@ export default function Music() {
 
                 <div className='music-list-container'>
                 <ul className='categories-list'>
-                  <li onClick={handleCategory} className='mood-text'>Modular</li>
-                  <li onClick={handleCategory} className='mood-text'>Thematic</li>
-                  <li onClick={handleCategory} className='mood-text'>Atmospheric</li>
-                  <li onClick={handleCategory} className='mood-text'>Songs</li>
-                  <li onClick={handleCategory} className='mood-text'>Ambient</li>
-                  <li onClick={handleCategory} className='mood-text'>Beats</li>
-                  <li onClick={handleCategory} className='mood-text'>Noisey</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Thematic" ? "red" : "black"}}>Thematic</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Modular" ? "red" : "black"}}>Modular</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Atmospheric" ? "red" : "black"}}>Atmospheric</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Songs" ? "red" : "black"}}>Songs</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Ambient" ? "red" : "black"}}>Ambient</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Beats" ? "red" : "black"}}>Beats</li>
+                  <li onClick={handleCategory} className='mood-text' style ={{color: category == "Noisey" ? "red" : "black"}}>Noisey</li>
 
                 </ul>
                 </div>
