@@ -19,15 +19,15 @@ import { Link } from 'react-router-dom';
 
 export default function Music() {
 
-  const [category, setCategory] = useState('Modular');
-  const [categoryBrowse, setCategoryBrowse] = useState('Modular');
+  const [category, setCategory] = useState('Thematic');
+  const [categoryBrowse, setCategoryBrowse] = useState('Thematic');
   const [trackChanged, setTrackChanged] = useState(false)
 
   const [trackList, setTrackList] = useState(
     MusicCategories.MusicCategories[0].tracks
   );
-  const [currentTrack, setCurrentTrack] = useState("Feyd_FINAL.mp3");
-  const [currentTrackName, setCurrentTrackName] = useState("Feyd: Don't Resuscitate");
+  const [currentTrack, setCurrentTrack] = useState("Technology Vs Itself.mp3");
+  const [currentTrackName, setCurrentTrackName] = useState("Technology Vs Itself");
 
 
   const [hoverHome, setHoverHome] = useState(false)

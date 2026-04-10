@@ -62,29 +62,37 @@ export default function Contact() {
                 {/* <p className="contact-text">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. hhdhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh */}
                 {/* </p> */}
                 <p className='contact-text'>
-                  Hi there, friend!
+                  Hi there, friend(?),
                   <br/>
                   <br/>
-                  Get me here: walterkeyne@gmail.com for composition, production/engineering, sound design and such, or, if you want to know more about me and/or my work.
+                  Get me here: walterkeyne@gmail.com for composition, production/engineering, sound design and such, or, if you want to know more about me/my work.
                   <br/>
                   <br/> 
                   :-::---::--:-
                   <br/> 
                   <br/>
-                  Just got my new, excellent studio up and running in Spain and as such - finally have the right isolation, space and acoustics to get stuck into some more live drums and piano recordings.
-                  Naturally I'll still be spending an inordinant amount of time on the ol' synths cause well they're just so damn fun...
-                  especially now with my new modular system which I love I do. Some favourite works of mine are like so partly through the merging of the acoustic with the electric, the analogue with the digital etc. 
-                  Goes without saying that I'll continue merging emotions in tandem -  when it's called for at least. 
+                  My most recent collaborative work was composition, production and sound design for the audio book 
+                  <a href="https://www.youtube.com/watch?v=6jX3pPiplks" target="_blank">The Shadows that Wanted to Shined</a>
                   <br/>
                   <br/>
-                  Also imminently will be downloading a comprehensive library of orchestral software instruments.
-                  I haven't spent as much time as I would of liked in this realm. 
+                  Before that I did composition and sound design for youtube channel <a href="https://www.youtube.com/@Thatfrenchartist" target="_blank">That French Artist.</a>
+                  <br />
+                  Some of the work included creating a few pieces to capture the aesthetic/mood of the TV series <a href="https://www.youtube.com/watch?v=0_rDNzC2D-o&t=215s" target="_blank">YOU</a> (e.g. end of that video @ 17.35) and a pelthora of pirate themed sounds and music for <a href="https://www.youtube.com/watch?v=d_QC6MoHK1w&t=3s" target="_blank">another video.</a>
+                  <br />
+                  <br />
+                  Before before that I co-created a conceptual/experimental video series yet to be 
+                  released called <a href="https://www.youtube.com/watch?v=LCRre56ppC0" target="_blank">Walking Flower</a>
+                  
+                  
                   <br/>
                   <br/>
-                  So much to play with...
+                  :-::---::--:-
                   <br/>
                   <br/>
-                  Let's make it happen : - :: ::-: :: :,,::::
+                  And some time ago...
+                  <br/>
+                  ...I did composition for a couple of short films: <a href="https://www.imdb.com/title/tt5254584/" target="_blank">Philoctetes: An Outsider's Myth</a> and                   <a href="https://vimeo.com/147148970?fl=pl&fe=sh" target="_blank">Blue Grey</a>
+
                                                 
                                                 
                                                 
